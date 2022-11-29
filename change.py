@@ -119,10 +119,10 @@ def yolo2coco(root_path,foruse,save_path,random_split=False):
             print('Save annotation to {}'.format(json_name))
 
 if True:
-    os.mkdir('train2017\\')
-    os.mkdir('trainlab\\')
-    os.mkdir('vallab\\')
-    os.mkdir('val2017\\')
+    os.mkdir('train2017')
+    os.mkdir('trainlab')
+    os.mkdir('vallab')
+    os.mkdir('val2017')
 path = "data"
 pathlist = os.listdir(path)
 newlist = set([x.split('.')[0] for x in pathlist])
